@@ -15,14 +15,33 @@ export default {
 
 <style>
 .footer {
+  display: block;
   width: 100%;
   height: auto;
-  border: 1px solid grey;
-  display: flex;
-  flex-direction: row;
 }
 
 .footer-content {
   margin: auto;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  display: grid;
+  grid-template-rows: 4fr 1fr 4fr;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+}
+
+.location {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.contact {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 </style>
