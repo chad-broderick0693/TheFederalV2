@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <Header />
-    <Home />
-    <Footer />
+    <Home id="home" />
+    <Footer id="footer" />
   </div>
 </template>
 
@@ -38,5 +38,17 @@ body {
 #app {
   height: 100vh;
   width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#home {
+  flex: 1 0 auto;
+  padding: 2rem;
+}
+
+#footer {
+  flex-shrink: 0;
+  padding: 2rem;
 }
 </style>
