@@ -18,5 +18,11 @@ export default {
   width: 100%;
   height: auto;
   border: 1px solid grey;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-content {
+  margin: auto;
 }
 </style>

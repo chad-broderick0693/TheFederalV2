@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header />
-    <Home id="home" />
+    <Home id="home-page" />
     <Footer id="footer" />
   </div>
 </template>
@@ -42,7 +42,7 @@ body {
   flex-direction: column;
 }
 
-#home {
+#home-page {
   flex: 1 0 auto;
   padding: 2rem;
 }
