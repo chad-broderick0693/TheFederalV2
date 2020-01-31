@@ -1,8 +1,10 @@
 <template>
   <div id="app">
-    <Header />
-    <Home id="home-page" />
-    <Footer id="footer" />
+    <Header id="header" />
+    <div class="content-container">
+      <Home id="home-page" />
+      <Footer id="footer" />
+    </div>
   </div>
 </template>
 
@@ -30,25 +32,28 @@ export default {
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   background-image: url("./assets/parchment-background.jpg");
   font-size: 62.5%;
+  min-height: 100%;
 }
 
 #app {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
+  min-height: 100vh;
+  display: grid;
 }
 
-#home-page {
-  flex: 1 0 auto;
-  padding: 2rem;
+.content-container {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
 }
-
 #footer {
-  flex-shrink: 0;
-  padding: 2rem;
+  height: 10rem;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 </style>
