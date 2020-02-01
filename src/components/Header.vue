@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <img class="logo" src="../assets/Logo.svg" alt="the-federal" />
-    <NavBar />
+    <NavBar :isSelected="isSelected" @nav-clicked="navClicked" />
   </div>
 </template>
 
@@ -12,6 +12,19 @@ export default {
   name: "header",
   components: {
     NavBar
+  },
+  props: {
+    isSelected: Boolean
+  },
+  data() {
+    return {
+      navLink: ""
+    };
+  },
+  methods: {
+    navClicked(selectedItem) {
+      this.$emit("navLinkClicked", selectedItem);
+    }
   }
 };
 </script>
