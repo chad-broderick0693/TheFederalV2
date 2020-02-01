@@ -1,8 +1,12 @@
 <template>
   <div id="app">
-    <Header id="header" />
+    <Header
+      id="header"
+      :selected="isSelected"
+      @navLinkClicked="setSelectedPage"
+    />
     <div class="content-container">
-      <Home id="home-page" />
+      <component :is="currentPage" />
       <Footer id="footer" />
     </div>
   </div>
@@ -11,6 +15,8 @@
 <script>
 import Header from "./components/Header";
 import Home from "./components/Home";
+import About from "./components/About";
+import Menu from "./components/Menu";
 import Footer from "./components/Footer";
 
 export default {
@@ -18,7 +24,20 @@ export default {
   components: {
     Header,
     Home,
+    About,
+    Menu,
     Footer
+  },
+  data() {
+    return {
+      currentPage: "Home",
+      isSelected: false
+    };
+  },
+  methods: {
+    setSelectedPage(selectedItem) {
+      this.currentPage = selectedItem;
+    }
   }
 };
 </script>

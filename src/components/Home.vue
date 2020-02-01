@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div id="home-page" class="home">
     <ImageCarousel />
     <div class="hours">
       <span class="mon-sat">Monday-Saturday:</span>
