@@ -35,8 +35,9 @@ export default {
 }
 
 .logo {
-  height: 10rem;
+  height: 15rem;
   margin: auto;
-  margin-top: 1.5rem;
+  margin-top: 3.5rem;
+  margin-bottom: 2rem;
 }
 </style>

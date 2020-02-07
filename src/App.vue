@@ -52,13 +52,13 @@ export default {
 }
 
 html {
+  font-size: 62.5%;
+  min-height: 100%;
   height: 100%;
 }
 
 body {
   background-image: url("./assets/parchment-background.jpg");
-  font-size: 62.5%;
-  min-height: 100%;
 }
 
 #app {

@@ -18,14 +18,15 @@ export default {
   display: block;
   width: 100%;
   height: auto;
+  margin-top: 5rem;
 }
 
 .footer-content {
   margin: auto;
   text-align: center;
   font-family: sans-serif;
-  font-size: 1rem;
-  font-weight: bold;
+  font-size: 2rem;
+  font-weight: normal;
   display: grid;
   grid-template-rows: 4fr 1fr 4fr;
   grid-template-columns: 1fr 2fr 2fr 1fr;
