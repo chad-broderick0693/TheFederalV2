@@ -60,8 +60,8 @@ export default {
 
 ul {
   list-style-type: none;
-  font-size: 1.8rem;
-  margin-top: 1rem;
+  font-size: 2.8rem;
+  margin-bottom: 3rem;
 }
 
 li {
