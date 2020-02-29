@@ -30,13 +30,16 @@ export default {
 .home {
   width: 100%;
   height: auto;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr auto;
 }
 
 .hours {
-  width: 30%;
-  height: 4rem;
-  margin: 4rem auto;
-  text-align: left;
+  width: 40%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
   font-family: sans-serif;
   font-size: 2rem;
   font-weight: normal;
@@ -83,5 +86,11 @@ export default {
   grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 4;
+}
+
+@media only screen and (max-width: 700px) {
+  .hours {
+    width: 95vw;
+  }
 }
 </style>

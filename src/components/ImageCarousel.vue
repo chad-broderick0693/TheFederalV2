@@ -12,7 +12,6 @@
       <img src="../assets/coffee-shop-img3.jpg" />
     </div>
 
-    <!-- Next and previous buttons -->
     <a class="prev" @click="plusSlides(-1)">&#10094;</a>
     <a class="next" @click="plusSlides(1)">&#10095;</a>
   </div>
@@ -36,7 +35,6 @@ export default {
     showSlides(n) {
       var i;
       var slides = document.getElementsByClassName("mySlides");
-      //var dots = document.getElementsByClassName("dot");
       if (n > slides.length) {
         this.slideIndex = 1;
       }
@@ -46,11 +44,7 @@ export default {
       for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
       }
-      // for (i = 0; i < dots.length; i++) {
-      //   dots[i].className = dots[i].className.replace(" active", "");
-      // }
       slides[this.slideIndex - 1].style.display = "block";
-      //dots[this.slideIndex - 1].className += " active";
     }
   },
   mounted() {
@@ -60,7 +54,6 @@ export default {
 </script>
 
 <style>
-/* Slideshow container */
 .image-carousel {
   max-width: 100rem;
   position: relative;
@@ -68,7 +61,6 @@ export default {
   margin-bottom: 3rem;
 }
 
-/* Hide the images by default */
 .mySlides {
   display: none;
   border: 2px solid black;
@@ -80,7 +72,6 @@ img {
   margin-bottom: -2px;
 }
 
-/* Next & previous buttons */
 .prev,
 .next {
   cursor: pointer;
@@ -97,7 +88,6 @@ img {
   user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
@@ -114,7 +104,6 @@ img {
   text-align: center;
 }
 
-/* Fading animation */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
