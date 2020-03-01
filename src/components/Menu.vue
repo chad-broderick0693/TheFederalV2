@@ -34,6 +34,10 @@
         <li class="list-header">Other:</li>
         <li class="list-item">Hot Cocoa</li>
       </ul>
+      <ul class="menu-list">
+        <li class="list-header">Baked Goods:</li>
+        <li class="list-item">Coming soon!</li>
+      </ul>
     </div>
   </div>
 </template>
@@ -77,7 +81,7 @@ a:visited {
   grid-row-start: 2;
   grid-row-end: 3;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1.5fr;
 }
 
 .list-header {
@@ -101,6 +105,7 @@ a:visited {
 
   .menu {
     grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
     justify-content: center;
   }
 
