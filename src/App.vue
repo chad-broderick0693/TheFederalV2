@@ -63,6 +63,7 @@ body {
 
 #app {
   min-height: 100vh;
+  max-width: 100vw;
   display: grid;
 }
 
