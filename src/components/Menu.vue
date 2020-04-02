@@ -9,12 +9,12 @@
       >.
     </div>
     <div class="menu">
-      <ul class="menu-list">
+      <ul class="menu-list coffee">
         <li class="list-header">Coffee:</li>
         <li class="list-item">House Coffee</li>
         <li class="list-item">Seasonal Coffee</li>
       </ul>
-      <ul class="menu-list">
+      <ul class="menu-list espresso">
         <li class="list-header">Espresso:</li>
         <li class="list-item">Americano</li>
         <li class="list-item">Cappuccino</li>
@@ -34,7 +34,7 @@
         <li class="list-header">Other:</li>
         <li class="list-item">Hot Cocoa</li>
       </ul>
-      <ul class="menu-list">
+      <ul class="menu-list baked-goods">
         <li class="list-header">Baked Goods:</li>
         <li class="list-item">Coming soon!</li>
       </ul>
@@ -112,6 +112,23 @@ a:visited {
   .menu-about {
     width: 95vw;
     text-align: justify;
+  }
+
+  .espresso {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .coffee {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .baked-goods {
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
 }
 </style>

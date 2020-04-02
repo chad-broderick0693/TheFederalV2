@@ -40,4 +40,10 @@ export default {
   margin-top: 3.5rem;
   margin-bottom: 2rem;
 }
+
+@media only screen and (max-width: 700px) {
+  .logo {
+    height: 13rem;
+  }
+}
 </style>
