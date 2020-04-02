@@ -7,21 +7,32 @@
       <div class="social-media-link-container">
         <div class="facebook">
           <a href="https://www.facebook.com" target="_blank"
-            ><img
-              src="https://img.icons8.com/ios/50/000000/facebook-circled.png"
+            ><img src="../assets/facebook_icon.png"
           /></a>
         </div>
         <div class="instagram">
           <a href="https://www.instagram.com" target="_blank"
-            ><img src="https://img.icons8.com/wired/64/000000/instagram-new.png"
+            ><img src="../assets/instagram_icon.png"
           /></a>
         </div>
       </div>
-      <span class="address">2 W. Main St., Mowrystown OH 45155</span>
+      <span class="address"
+        ><a
+          href="https://www.google.com/maps/place/2+W+Main+St,+Mowrystown,+OH+45155/@39.0383328,-83.7509451,17z/data=!3m1!4b1!4m5!3m4!1s0x88412f71ce6dcbef:0x67e963b4bcb461de!8m2!3d39.0383328!4d-83.7487564"
+          target="_blank"
+          >2 W. Main St., Mowrystown OH 45155</a
+        ></span
+      >
       <div class="contact-info">
-        <span class="phone-number">Phone#: (937) 422-1777</span>
-        <span class="email"
-          >Email Address: thefederalcoffeehouse@gmail.com</span
+        <span class="phone-number"
+          ><a href="tel:PHONE-NUMBER-GOES-HERE">(937) 422-1777</a></span
+        >
+        <span class="email">
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=EMAIL-GOES-HERE"
+            target="_blank"
+            >thefederalcoffeehouse@gmail.com</a
+          ></span
         >
       </div>
     </div>
@@ -163,6 +174,12 @@ export default {
     grid-row-end: 3;
   }
 
+  .facebook,
+  .instagram {
+    display: inline;
+    margin: 3rem;
+  }
+
   .location {
     font-family: FooterFont;
     font-size: 3rem;
@@ -171,7 +188,7 @@ export default {
   }
 
   .address {
-    font-size: 2rem;
+    font-size: 1.8rem;
     grid-row-start: 4;
     grid-row-end: 5;
     margin-top: 0px;
@@ -186,9 +203,10 @@ export default {
 
   .contact-info {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
     grid-row-start: 6;
     grid-row-end: 7;
+    margin-bottom: 2rem;
   }
 
   .contact-info > span {

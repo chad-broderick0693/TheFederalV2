@@ -69,6 +69,7 @@ export default {
 img {
   width: 100%;
   height: 100%;
+  height: 55rem;
   margin-bottom: -2px;
 }
 
@@ -126,6 +127,12 @@ img {
   }
   to {
     opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  img {
+    height: 25rem;
   }
 }
 </style>
