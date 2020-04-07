@@ -1,17 +1,19 @@
 <template>
   <footer class="footer">
     <div class="footer-content">
-      <span class="location">Location:</span>
-      <span class="contact">Contact:</span>
-      <span class="social-media">Social Media Links:</span>
+      <span class="location">Location</span>
+      <span class="contact">Contact</span>
+      <span class="social-media">Follow Us</span>
       <div class="social-media-link-container">
         <div class="facebook">
-          <a href="https://www.facebook.com" target="_blank"
+          <a href="https://www.facebook.com/thefederalcoffee/" target="_blank"
             ><img src="../assets/facebook_icon.png"
           /></a>
         </div>
         <div class="instagram">
-          <a href="https://www.instagram.com" target="_blank"
+          <a
+            href="https://www.instagram.com/thefederalcoffeehouse/"
+            target="_blank"
             ><img src="../assets/instagram_icon.png"
           /></a>
         </div>
@@ -25,11 +27,11 @@
       >
       <div class="contact-info">
         <span class="phone-number"
-          ><a href="tel:PHONE-NUMBER-GOES-HERE">(937) 422-1777</a></span
+          ><a href="tel:9374221777">(937) 422-1777</a></span
         >
         <span class="email">
           <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=EMAIL-GOES-HERE"
+            href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=thefederalcoffeehouse@gmail.com"
             target="_blank"
             >thefederalcoffeehouse@gmail.com</a
           ></span
@@ -41,7 +43,7 @@
 
 <script>
 export default {
-  name: "footer"
+  name: "footer",
 };
 </script>
 
@@ -127,13 +129,13 @@ export default {
   grid-column-end: 5;
   grid-row-start: 2;
   grid-row-end: 3;
+  margin-top: 2rem;
 }
 
-.facebook > a,
-.instagram > a {
-  display: inline-block;
-  height: 5rem;
-  width: 5rem;
+.facebook,
+.instagram {
+  display: inline;
+  margin: 3rem;
 }
 
 .facebook > a > img,

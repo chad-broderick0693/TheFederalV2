@@ -23,7 +23,7 @@
 
 <script>
 export default {
-  name: "About"
+  name: "About",
 };
 </script>
 
@@ -43,6 +43,7 @@ export default {
   font-family: MissionFont;
   font-size: 3rem;
   margin: auto;
+  padding: 0 1rem;
 }
 
 .mission-description {
@@ -53,6 +54,7 @@ export default {
   margin: auto;
   margin-top: 3rem;
   line-height: 2.5rem;
+  padding: 0 1.5rem;
 }
 
 @media only screen and (max-width: 700px) {

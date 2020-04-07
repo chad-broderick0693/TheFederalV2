@@ -1,15 +1,15 @@
 <template>
   <div class="image-carousel">
     <div class="mySlides fade">
-      <img src="../assets/coffee-shop-img1.jpg" />
+      <img src="../assets/FederalFromOutside.jpg" />
     </div>
 
     <div class="mySlides fade">
-      <img src="../assets/coffee-shop-img2.jpg" />
+      <img src="../assets/FederalFromInside.jpg" />
     </div>
 
     <div class="mySlides fade">
-      <img src="../assets/coffee-shop-img3.jpg" />
+      <img src="../assets/FederalComingSoon.jpg" />
     </div>
 
     <a class="prev" @click="plusSlides(-1)">&#10094;</a>
@@ -22,7 +22,7 @@ export default {
   name: "ImageCarousel",
   data() {
     return {
-      slideIndex: 1
+      slideIndex: 1,
     };
   },
   methods: {
@@ -45,17 +45,17 @@ export default {
         slides[i].style.display = "none";
       }
       slides[this.slideIndex - 1].style.display = "block";
-    }
+    },
   },
   mounted() {
     this.showSlides(this.slideIndex);
-  }
+  },
 };
 </script>
 
 <style>
 .image-carousel {
-  max-width: 100rem;
+  max-width: 85rem;
   position: relative;
   margin: auto;
   margin-bottom: 3rem;
