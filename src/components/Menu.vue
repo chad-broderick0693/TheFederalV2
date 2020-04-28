@@ -16,12 +16,13 @@
       </ul>
       <ul class="menu-list espresso">
         <li class="list-header">Espresso:</li>
-        <li class="list-item">Americano</li>
         <li class="list-item">Cappuccino</li>
-        <li class="list-item">Cortado</li>
-        <li class="list-item">Espresso</li>
         <li class="list-item">Latte</li>
         <li class="list-item">Macchiato</li>
+        <li class="list-item">Frappe</li>
+        <li class="list-item">Espresso</li>
+        <li class="list-item">Americano</li>
+        <li class="list-item">Cortado</li>
         <li class="list-item">Red Eye</li>
       </ul>
       <ul class="menu-list">
@@ -44,7 +45,7 @@
 
 <script>
 export default {
-  name: "Menu"
+  name: "Menu",
 };
 </script>
 
