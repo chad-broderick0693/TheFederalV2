@@ -26,9 +26,6 @@
         ></span
       >
       <div class="contact-info">
-        <span class="phone-number"
-          ><a href="tel:9374221777">(937) 422-1777</a></span
-        >
         <span class="email">
           <a
             href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=thefederalcoffeehouse@gmail.com"
@@ -172,6 +169,7 @@ export default {
   .social-media-link-container {
     text-align: center;
     font-size: 2rem;
+    margin-top: 0;
     grid-row-start: 2;
     grid-row-end: 3;
   }
@@ -212,6 +210,7 @@ export default {
   }
 
   .contact-info > span {
+    margin-top: 0;
     margin-left: 0px;
   }
 
