@@ -2,11 +2,7 @@
   <div id="menu-page">
     <div class="menu-about">
       The Federal Coffee House of Mowrystown, Ohio proudly serves
-      ethically-sourced coffee roasted locally in Cincinnati, Ohio by the fine
-      roasters of
-      <a href="http://www.coffee-emporium.com" target="_blank"
-        >Coffee Emporium</a
-      >.
+      ethically-sourced coffee roasted locally in Cincinnati, Ohio.
     </div>
     <div class="menu">
       <ul class="menu-list coffee">

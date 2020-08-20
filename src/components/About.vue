@@ -35,6 +35,7 @@ export default {
 #about-page {
   width: 100%;
   text-align: justify;
+  margin-bottom: 17.5rem;
 }
 
 .mission {
